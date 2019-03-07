@@ -1,0 +1,148 @@
+html,body {
+  height: 100%;
+}
+.jd_layout {
+  width: 100%;
+  height: 100%;
+}
+
+/*顶部通栏*/
+.jd_topBar {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/header-bg.png) 0 0 / 1px 44px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.jd_topBar a {
+  width: 40px;
+  height: 44px;
+  padding: 12px 10px;
+  position: absolute;
+  top: 0;
+  /*
+    让背景图从内容区域显示
+    border-box: 从边框区域开始显示
+    padding-box: 从内边距区域开始显示
+    content-box: 从内容区域开始显示
+  */
+  -webkit-background-origin: content-box;
+  background-origin: content-box;
+  /*
+    裁剪掉内容以外的区域
+    border-box: 边框以外被裁剪
+    padding-box:  内边距以外被裁剪
+    content-box: 内容以外被裁剪
+  */
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+.jd_topBar .icon_back {
+  left: 0;
+  background-position: -20px 0;
+}
+.jd_topBar .icon_menu {
+  right: 0;
+  background-position: -60px 0;
+}
+.jd_topBar form {
+  width: 100%;
+  padding: 0 40px;
+}
+.jd_topBar form input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 7px;
+  padding: 0 10px;
+}
+
+/*分类主体*/
+.jd_main {
+  width: 100%;
+  height: 100%;
+  padding-top: 45px;
+}
+.jd_main .jd_cateLeft{
+  width: 90px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.jd_cateLeft ul {
+  width: 90px;
+}
+.jd_cateLeft ul li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f3f4f5;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.jd_cateLeft ul li.now {
+  background-color: #fff;
+  border-right: none;
+}
+.jd_cateLeft ul li.now a {
+  color: #d8505c;
+}
+.jd_cateLeft ul li a {
+  display: block;
+  width: 100%;
+}
+.jd_main .jd_cateRight{
+  /* overflow: hidden 触发BFC让该元素绝对绝缘（不让其他浮动元素影响自己，不让自己的浮动元素影响其他元素）*/
+  overflow: hidden;
+  height: 100%;
+}
+.jd_cateRight_box {
+  padding: 0 10px;
+}
+.jd_cateRight_box .banner {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.jd_cateRight_box .banner img {
+  display: block;
+  width: 100%;
+}
+.jd_cateRight_box .hot {
+  margin-top: 10px;
+}
+.jd_cateRight_box .hot h3 {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.jd_cateRight_box .hot ul {
+  width: 100%;
+}
+.jd_cateRight_box .hot ul li {
+  width: 33.3333%;
+  float: left;
+  padding-top: 5px;
+}
+.jd_cateRight_box .hot ul li a {
+  display: block;
+  width: 100%;
+}
+.jd_cateRight_box .hot ul li a img {
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto;
+}
+.jd_cateRight_box .hot ul li p {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+}
