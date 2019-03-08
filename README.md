@@ -3,6 +3,7 @@
 
 # 技能点
 **首页**
+<div align=center><img src="https://github.com/Uncle-He/m-jd-index/blob/master/media/jd-index.png" width=50% /></div>
 * 适配方案
    * 标准适配
 * 布局
@@ -19,6 +20,7 @@
    * 当DOM元素加载完成时，倒计时按照预设的时间开始倒计时
    
 **分类页**
+<div align=center><img src="https://github.com/Uncle-He/m-jd-index/blob/master/media/cartegory.png" width=50% /></div>
 * 适配方案
    * 标准适配
 * 布局
